@@ -22,3 +22,33 @@ select the encrypted file and decrypt it.<br>
 ## Decrypt mode
 ![image](https://github.com/user-attachments/assets/abd3c92f-9b9c-4b28-9d90-c5696bce81a7)
 
+# Compilation to binary
+
+You can compile this script if you want, using `pyinstaller`.<br>
+Download the repository and open a terminal in it.<br><br>
+
+Create a virtual environment with the following command and activate it:<br>
+```shell
+python3 -m venv .env
+```
+On windows (Powershell):
+```ps1
+.\.env\Scripts\Activate.ps1
+```
+On linux (bash):
+```sh
+source .env/bin/activate
+```
+
+Install depending libraries:<br>
+```shell
+pip install -r requirements.txt
+pip install pyinstaller
+```
+
+Compile the python script in one file executable using pyinstaller:
+```sh
+pyinstaller.exe -F main.py --noconsole --icon=app.ico
+```
+You can exit of the virtual environment with `deactivate`.<br>
+You should see the binary compiled in the `dist` folder.
