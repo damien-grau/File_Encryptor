@@ -46,7 +46,7 @@ pip install -r requirements.txt
 pip install pyinstaller
 ```
 
-Compile the python script in one file executable using pyinstaller:
+Compile the python script in one executable file using pyinstaller:
 ```sh
 pyinstaller.exe -F main.py --noconsole --icon=app.ico
 ```
